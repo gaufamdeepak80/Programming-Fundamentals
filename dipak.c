@@ -10,6 +10,7 @@ int main()
 {
 int a,b,c;
 char s,d;
+x:
 	
 	printf("***********************************\n");
 	printf("**   Enter any no:-              **\n");
@@ -26,6 +27,7 @@ switch(a)
 	case 1:
 		printf("*Program to check odd or even :*\n\n");
 		printf("*Enter a number : ");
+		
 		scanf("%d",&b);
 		printf("*%d is a ",b);
 		if(b%2==0) printf("Even");
@@ -33,9 +35,9 @@ switch(a)
 		printf(" Number *");
 		printf("\n\n");
 		scanf("%d",&a);
-		
+		goto x;
 		break;
-	
+               
 	case 2:
 		printf("*Program to check Prime or not :*\n\n");
 		printf("*Enter a number : ");
